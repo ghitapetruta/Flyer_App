@@ -115,8 +115,16 @@ def render():
     """Construiește interfața pentru generarea etichetelor."""
     init_state()
 
-    st.title("🏷️ Generator Etichete")
-    st.caption("Etichete A4 cu logo, cod, denumire și preț — layout flexibil 1-5 coloane")
+    # Hero banner corporate
+    st.markdown("""
+    <div class="brand-hero">
+        <div class="brand-hero-cat">METALCOM · PRINT TOOLS</div>
+        <h1 class="brand-hero-title">Generator Etichete</h1>
+        <div class="brand-hero-subtitle">
+            Etichete A4 cu logo, cod, denumire și preț — layout flexibil 1-5 coloane.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
     tab1, tab2, tab3, tab4 = st.tabs([
         "⚙️ Setări",

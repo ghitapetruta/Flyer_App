@@ -72,8 +72,16 @@ def render():
 
 
     # ── HEADER ─────────────────────────────────────────────────────
-    st.title("📄 Generator Flyer")
-    st.caption("Configurează datele, stilul și layout-ul, apoi generează HTML și PPTX")
+    # Hero banner corporate
+    st.markdown("""
+    <div class="brand-hero">
+        <div class="brand-hero-cat">METALCOM · PRINT TOOLS</div>
+        <h1 class="brand-hero-title">Generator Flyer</h1>
+        <div class="brand-hero-subtitle">
+            Configurează datele, stilul și layout-ul, apoi generează HTML și PPTX.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 
     # ── TABURI ─────────────────────────────────────────────────────
